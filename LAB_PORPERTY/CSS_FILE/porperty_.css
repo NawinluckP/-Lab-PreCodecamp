@@ -1,0 +1,147 @@
+body {
+  text-align: center;
+  margin: 0;
+}
+a {
+  font-size: 20px;
+}
+/* เมื่อโดนกด */
+a.active {
+  background-color: brown;
+  color: wheat;
+  text-decoration: none;
+}
+/* * {
+  border: solid 1px red;
+} */
+/* tooltipopen--------------------*/
+
+/* ----textที่จะทำtooltip open------ */
+#tooltip {
+  position: relative;
+  /* มีสถานะเป็นแบบ inlineblock */
+  display: inline-block;
+  /* ตีเส้นเฉพาะด้านล่าง ขนาด รูปแบบเส้น สีเส้น */
+  border-bottom: 2px solid red;
+}
+/* ตีเส้นเฉพาะด้านล่าง ขนาด รูปแบบเส้น สีเส้น */
+/* ----textที่จะทำtooltipclose------ */
+
+/* กล่องtooltip open */
+.tooltiptext {
+  /* ใช้visibility ซ่อนไว้ก่อน */
+  visibility: hidden;
+  /* ขนาดของกล่อง */
+  width: 150px;
+  /* สีกล่อง */
+  background-color: red;
+  /* สีตัวหนังสือ */
+  color: #fff;
+  /* ข้อความตรงกลาง */
+  text-align: center;
+  /* ขอบมน */
+  border-radius: 6px;
+  /* ขนาดรอบๆของข้อความ */
+  padding: 5px 0;
+
+  /* สถานะposition */
+  position: absolute;
+  /* ตั้งให้มันเด้งขึ้นมาคนละlayer กับข้อความ */
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+/* กล่อง tooltip close */
+
+/* เมื่อนำเมาส์มาชี้จะเกิดการ visible tooltiptext */
+#tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/* tooltipclose------------------------- */
+
+/* paginationopen---------------- */
+/* ปรับขนาดของboxcontainer */
+#bottombar {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+/* ขนาดด้่านใน */
+.pagination {
+  flex-basis: 3em;
+}
+/* เปลี่ยนปบบtext a */
+.pagination a {
+  padding: 8px;
+  color: black;
+  text-decoration: none;
+}
+
+/* ปุ่มไหนถ้าไม่กด */
+.pagination a:hover:not(.active) {
+  background-color: salmon;
+}
+/* paginationclose---------------- */
+
+/* Navigation bar open----- */
+/* เอาสไตคกับจุดออก */
+#topbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+/* ทำให้ขึ้นมาอยู่ทางซ้ายให้หมด */
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+/* ตัวสุดท้ายไปอยู่ขวา */
+li:last-child {
+  border-right: none;
+  float: right;
+}
+/* ทำtag a เป็นบล็อคเพื่อใส่สี */
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+/* ตัวที่ยังไม่โดนกดและเอาเมาส์ไปชี้ */
+li a:hover:not(.active) {
+  background-color: salmon;
+}
+
+/* Navigation bar close----- */
+
+/* dropdownopen */
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #3b3535;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: brown;
+}
+li.dropdown {
+  display: inline-block;
+}
