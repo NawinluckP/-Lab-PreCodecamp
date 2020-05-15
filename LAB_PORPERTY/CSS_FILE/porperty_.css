@@ -123,10 +123,6 @@ li a:hover:not(.active) {
 
 /* dropdownopen */
 
-li.dropdown {
-  display: inline-block;
-}
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -138,10 +134,7 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-li a:hover,
+
 .dropdown:hover .dropbtn {
   background-color: brown;
-}
-li.dropdown {
-  display: inline-block;
 }
