@@ -1,0 +1,112 @@
+/* * {
+  border: red solid 1px;
+  box-sizing: border-box;
+} */
+
+h2 {
+  text-align: center;
+}
+
+/* heading open */
+#container-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+#grid-containertop {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+  padding: 25px;
+  font-size: 16px;
+  align-items: center;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  margin-left: 150px;
+  margin-right: 150px;
+  background-color: blue;
+  color: white;
+}
+#mid {
+  background-color: red;
+  width: auto;
+  height: 200px;
+  text-align: center;
+}
+#mid > p {
+  color: white;
+  margin-top: 0px;
+}
+/*heading close */
+
+/* <!-- --------------gridcontainer-heding open---------------- --> */
+#grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  font-size: 16px;
+  align-items: center;
+  font-weight: bold;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#grid-container > div {
+  padding: 0px 0;
+  text-align: left;
+}
+/* <!-- --------------gridcontainer-heding close---------------- --> */
+
+/* middle blackground open */
+#middle-blackground {
+  margin-top: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+#grid-body {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 10px;
+  padding: 15px;
+  font-size: 30px;
+  align-items: center;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.56);
+  margin-top: 15px;
+  color: white;
+  text-align: center;
+}
+#grid-body > div > span {
+  color: yellow;
+}
+/* middle blackground close */
+
+#grid-image {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  font-size: 16px;
+  align-items: center;
+  margin-top: 15px;
+  color: white;
+  text-align: center;
+}
+#grid-text {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 30px;
+  font-size: 16px;
+  align-items: center;
+  margin-top: 15px;
+  color: black;
+}
+
+/* -------- */
